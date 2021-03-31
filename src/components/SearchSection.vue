@@ -8,38 +8,8 @@
 
           <SearchFacet
             :checked="cost"
-            :facet="searchState.facets.cost[0]"
-            @change="handleFacetChange($event, 'cost')"
-          />
-
-          <SearchFacet
-            :checked="card_class"
-            :facet="searchState.facets.card_class[0]"
-            @change="handleFacetChange($event, 'card_class')"
-          />
-
-          <SearchFacet
-            :checked="type"
-            :facet="searchState.facets.type[0]"
-            @change="handleFacetChange($event, 'type')"
-          />
-
-          <SearchFacet
-            :checked="set"
-            :facet="searchState.facets.set[0]"
-            @change="handleFacetChange($event, 'set')"
-          />
-
-          <SearchFacet
-            :checked="race"
-            :facet="searchState.facets.race[0]"
-            @change="handleFacetChange($event, 'race')"
-          />
-
-          <SearchFacet
-            :checked="rarity"
-            :facet="searchState.facets.rarity[0]"
-            @change="handleFacetChange($event, 'rarity')"
+            :facet="searchState.facets.make_name[0]"
+            @change="handleFacetChange($event, 'make_name')"
           />
         </div>
         <div class="sui-layout-main">

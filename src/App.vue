@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1 class="header">Search UI demo with Vue (Hearthstone cards)</h1>
+    <h1 class="header">Search UI demo with Vue</h1>
     <SearchSection />
   </div>
 </template>

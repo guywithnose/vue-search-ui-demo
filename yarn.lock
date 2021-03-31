@@ -682,6 +682,13 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@elastic/app-search-javascript@^7.3.0":
+  version "7.8.0"
+  resolved "https://registry.yarnpkg.com/@elastic/app-search-javascript/-/app-search-javascript-7.8.0.tgz#cbc7af6bcdd224518f7f595145d6ec744e0b165d"
+  integrity sha512-EsAa/E/dQwBO72nrQ9YrXudP9KVY0sVUOvqPKZ3hBj9Mr3+MtWMyIKcyMf09bzdayk4qE+moetYDe5ahVbiA+Q==
+  dependencies:
+    object-hash "^1.3.0"
+
 "@elastic/react-search-ui-views@^0.12.1":
   version "0.12.1"
   resolved "https://registry.yarnpkg.com/@elastic/react-search-ui-views/-/react-search-ui-views-0.12.1.tgz#db2abd066515afc617642ca14cc0b76eee7eea78"
@@ -695,14 +702,12 @@
     rc-pagination "^1.17.3"
     react-select "^2.1.1"
 
-"@elastic/search-ui-app-search-connector@^0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@elastic/search-ui-app-search-connector/-/search-ui-app-search-connector-0.10.0.tgz#055fd877c53a7f30dfbd5945c6debe5bd9b64a03"
-  integrity sha512-BiwGFjrrT5tn6DIoFKPVjn7r2roz5Kc01rAAwzcauC0CEQ3oI8Kvqhy80M5fdHH9N9BBrknomFewgjfuU7G+EQ==
+"@elastic/search-ui-app-search-connector@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@elastic/search-ui-app-search-connector/-/search-ui-app-search-connector-1.5.1.tgz#83d8ee2f7a04a30340021bb200e631349df7b4e1"
+  integrity sha512-RYoSz/L81ALKy82IFBtOO6QqGkZvJ1Ba/P1FTKmnuy32PmFdNeo79654wBgP6xJyt/mKXqKHp5kIrstsaGirug==
   dependencies:
-    "@babel/polyfill" "^7.2.5"
-    core-js "^2.6.9"
-    swiftype-app-search-javascript "^2.4.0"
+    "@elastic/app-search-javascript" "^7.3.0"
 
 "@elastic/search-ui@^0.10.0":
   version "0.10.0"
@@ -7963,13 +7968,6 @@ svgo@^1.0.0:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
-
-swiftype-app-search-javascript@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/swiftype-app-search-javascript/-/swiftype-app-search-javascript-2.4.0.tgz#9ba349ffa89dacd03479d92705f4a28eadb7c1d4"
-  integrity sha512-ObTDFuRAd+6ZrSkbUx/hadYUi1o9Uwm6i4FML6D9PiB1H4IdUClFbD24464P0cVPLxuyvCNZ1cLmtP91Hs9p2A==
-  dependencies:
-    object-hash "^1.3.0"
 
 symbol-observable@^1.1.0:
   version "1.2.0"

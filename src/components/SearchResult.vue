@@ -1,37 +1,20 @@
 <template>
   <article class="search-result">
-    <h2 class="search-result__heading">{{ result.name.raw }}</h2>
+    <h2 class="search-result__heading">{{ result.ad_id.raw }}</h2>
     <div class="search-result__body">
       <img
         class="search-result__image"
         :src="imageSrc(result.id.raw)"
-        :alt="result.name.raw"
+        :alt="result.ad_id.raw"
       />
       <div class="search-result__data">
-        <div v-if="result.type">Type: {{ result.type.raw }}</div>
-        <div v-if="result.race">Race: {{ result.race.raw }}</div>
+        <div v-if="result.type">Make: {{ result.make_name.raw }}</div>
+        <div v-if="result.race">model: {{ result.model_name.raw }}</div>
         <div v-else-if="result.card_class">
-          Class: {{ result.card_class.raw }}
+          Class: {{ result.class_name.raw }}
         </div>
-        <div>Set: {{ result.set.raw }}</div>
-        <div>Rarity: {{ result.rarity.raw }}</div>
-        <br />
-        <div v-if="result.cost">Cost: {{ result.cost.raw }}</div>
-        <div v-if="result.attack">Attack: {{ result.attack.raw }}</div>
-        <div v-if="result.durability">
-          Durability: {{ result.durability.raw }}
-        </div>
-        <div v-if="result.health">Health: {{ result.health.raw }}</div>
-        <div v-if="result.armor">Armor: {{ result.armor.raw }}</div>
-        <div v-if="result.spell_damage">
-          Spell damage: {{ result.spell_damage.raw }}
-        </div>
-        <div v-if="result.overload">Overload: {{ result.overload.raw }}</div>
-        <br />
-        <div v-if="result.artist">Artist: {{ result.artist.raw }}</div>
       </div>
     </div>
-    <p class="search-result__flavor">{{ result.flavor.raw }}</p>
   </article>
 </template>
 
